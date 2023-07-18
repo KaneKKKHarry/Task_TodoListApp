@@ -43,9 +43,9 @@ function App() {
       <div style={{margin: '50px'}}>
         <ol>
           {todoLists.map((todo) => (
-          <li key={todo.id} style={{marginBottom: '10px'}}>
+          <li key={todo.id} style={{marginBottom: '10px', width: '300px', padding: '5px'}}>
             <span>{todo.title}</span>
-            <button style={{marginLeft: '10px', }} onClick={() => deleteList(todo)}>削除</button>
+            <button style={{marginLeft: '20px'}} onClick={() => deleteList(todo)}>削除</button>
           </li>
           ))}
         </ol>
